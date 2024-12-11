@@ -1,0 +1,76 @@
+{
+  "plots": [
+    {
+      "id": 1,
+      "name": "Property 1",
+      "uid": "",
+      "path": "",
+      "sqft": "",
+      "price": "",
+      "type": "",
+      "description": "",
+      "amenities": [
+        "amenities1",
+        "amenities2"
+      ],
+      "date_created": "",
+      "time_created": "",
+      "plots": {
+        "id": 1,
+        "name": "Plot 1",
+        "uid": "",
+        "path": "",
+        "sqft": "",
+        "price": "",
+        "type": "",
+        "description": "",
+        "amenities": [
+          "amenities1",
+          "amenities2"
+        ],
+        "date_created": "",
+        "time_created": ""
+      }
+    }
+  ],
+  "properties": [
+    {
+      "id": 1,
+      "name": "Plot 1",
+      "uid": "",
+      "path": "",
+      "sqft": "",
+      "price": "",
+      "type": "",
+      "description": "",
+      "amenities": [
+        "amenities1",
+        "amenities2"
+      ],
+      "date_created": "",
+      "time_created": ""
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "fullname": "John Oladele",
+      "user_id": "user1733767626452",
+      "role": "admin",
+      "phone": "09061811990",
+      "email": "johnoladele690@gmail.com",
+      "password": "12345678"
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "user_id": "",
+      "property_id": "",
+      "plot_id": "",
+      "type": "",
+      "date_created": "",
+      "time_created": ""
+    }
+  ]
+}
