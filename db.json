@@ -2,53 +2,207 @@
   "plots": [
     {
       "id": 1,
-      "name": "Property 1",
-      "uid": "",
-      "path": "",
-      "sqft": "",
-      "price": "",
-      "type": "",
-      "description": "",
+      "name": "Plot 1",
+      "uid": "UID2063",
+      "path": "/images/plot1.jpg",
+      "sqft": "677 sqft",
+      "price": "$292",
+      "type": "Residential",
+      "description": "Description for Plot 1",
+      "area": "unkown",
       "amenities": [
-        "amenities1",
-        "amenities2"
+        "amenity1",
+        "amenity2"
       ],
-      "date_created": "",
-      "time_created": "",
-      "plots": {
-        "id": 1,
-        "name": "Plot 1",
-        "uid": "",
-        "path": "",
-        "sqft": "",
-        "price": "",
-        "type": "",
-        "description": "",
-        "amenities": [
-          "amenities1",
-          "amenities2"
-        ],
-        "date_created": "",
-        "time_created": ""
-      }
+      "date_created": "2024-12-11T21:35:07.860Z",
+      "time_created": "22:35:07 GMT+0100 (West Africa Standard Time)"
+    },
+    {
+      "id": 2,
+      "name": "Plot 2",
+      "uid": "UID5769",
+      "path": "/images/plot2.jpg",
+      "sqft": "396 sqft",
+      "price": "$316",
+      "type": "Commercial",
+      "description": "Description for Plot 2",
+      "area": "unkown",
+      "amenities": [
+        "amenity1",
+        "amenity2"
+      ],
+      "date_created": "2024-12-11T21:35:07.861Z",
+      "time_created": "22:35:07 GMT+0100 (West Africa Standard Time)"
+    },
+    {
+      "id": 3,
+      "name": "Plot 3",
+      "uid": "UID7644",
+      "path": "/images/plot3.jpg",
+      "sqft": "210 sqft",
+      "price": "$411",
+      "type": "Commercial",
+      "description": "Description for Plot 3",
+      "area": "unkown",
+      "amenities": [
+        "amenity1",
+        "amenity2"
+      ],
+      "date_created": "2024-12-11T21:35:07.861Z",
+      "time_created": "22:35:07 GMT+0100 (West Africa Standard Time)"
+    },
+    {
+      "id": 4,
+      "name": "Plot 4",
+      "uid": "UID1492",
+      "path": "/images/plot4.jpg",
+      "sqft": "1072 sqft",
+      "price": "$741",
+      "type": "Commercial",
+      "description": "Description for Plot 4",
+      "area": "unkown",
+      "amenities": [
+        "amenity1",
+        "amenity2"
+      ],
+      "date_created": "2024-12-11T21:35:07.861Z",
+      "time_created": "22:35:07 GMT+0100 (West Africa Standard Time)"
+    },
+    {
+      "id": 5,
+      "name": "Plot 5",
+      "uid": "UID4903",
+      "path": "/images/plot5.jpg",
+      "sqft": "109 sqft",
+      "price": "$801",
+      "type": "Commercial",
+      "description": "Description for Plot 5",
+      "area": "unkown",
+      "amenities": [
+        "amenity1",
+        "amenity2"
+      ],
+      "date_created": "2024-12-11T21:35:07.861Z",
+      "time_created": "22:35:07 GMT+0100 (West Africa Standard Time)"
+    },
+    {
+      "id": 6,
+      "name": "Plot 6",
+      "uid": "UID1410",
+      "path": "/images/plot6.jpg",
+      "sqft": "441 sqft",
+      "price": "$331",
+      "type": "Commercial",
+      "description": "Description for Plot 6",
+      "area": "unkown",
+      "amenities": [
+        "amenity1",
+        "amenity2"
+      ],
+      "date_created": "2024-12-11T21:35:07.861Z",
+      "time_created": "22:35:07 GMT+0100 (West Africa Standard Time)"
+    },
+    {
+      "id": 7,
+      "name": "Plot 7",
+      "uid": "UID9325",
+      "path": "/images/plot7.jpg",
+      "sqft": "788 sqft",
+      "price": "$716",
+      "type": "Commercial",
+      "description": "Description for Plot 7",
+      "area": "unkown",
+      "amenities": [
+        "amenity1",
+        "amenity2"
+      ],
+      "date_created": "2024-12-11T21:35:07.861Z",
+      "time_created": "22:35:07 GMT+0100 (West Africa Standard Time)"
+    },
+    {
+      "id": 8,
+      "name": "Plot 8",
+      "uid": "UID4023",
+      "path": "/images/plot8.jpg",
+      "sqft": "395 sqft",
+      "price": "$171",
+      "type": "Residential",
+      "description": "Description for Plot 8",
+      "area": "unkown",
+      "amenities": [
+        "amenity1",
+        "amenity2"
+      ],
+      "date_created": "2024-12-11T21:35:07.861Z",
+      "time_created": "22:35:07 GMT+0100 (West Africa Standard Time)"
+    },
+    {
+      "id": 9,
+      "name": "Plot 9",
+      "uid": "UID3330",
+      "path": "/images/plot9.jpg",
+      "sqft": "450 sqft",
+      "price": "$288",
+      "type": "Commercial",
+      "description": "Description for Plot 9",
+      "area": "unkown",
+      "amenities": [
+        "amenity1",
+        "amenity2"
+      ],
+      "date_created": "2024-12-11T21:35:07.861Z",
+      "time_created": "22:35:07 GMT+0100 (West Africa Standard Time)"
+    },
+    {
+      "id": 10,
+      "name": "Plot 10",
+      "uid": "UID8087",
+      "path": "/images/plot10.jpg",
+      "sqft": "517 sqft",
+      "price": "$231",
+      "type": "Residential",
+      "description": "Description for Plot 10",
+      "area": "unkown",
+      "amenities": [
+        "amenity1",
+        "amenity2"
+      ],
+      "date_created": "2024-12-11T21:35:07.861Z",
+      "time_created": "22:35:07 GMT+0100 (West Africa Standard Time)"
     }
   ],
   "properties": [
     {
-      "id": 1,
-      "name": "Plot 1",
-      "uid": "",
-      "path": "",
-      "sqft": "",
-      "price": "",
-      "type": "",
-      "description": "",
+      "name": "Property 1",
+      "uid": "unique_identifier",
+      "path": "/path/to/property",
+      "sqft": "1500",
+      "price": "200000",
+      "type": "Residential",
+      "description": "Detailed description of the property",
       "amenities": [
-        "amenities1",
-        "amenities2"
+        "Pool",
+        "Gym"
       ],
-      "date_created": "",
-      "time_created": ""
+      "date_created": "2023-01-01",
+      "time_created": "12:00:00",
+      "id": 2
+    },
+    {
+      "name": "New Property",
+      "uid": "m4kdt15t-z3oqyp014xr-custom",
+      "path": "/path/to/property",
+      "sqft": "1500",
+      "price": "200000",
+      "type": "Residential",
+      "description": "Detailed description of the property",
+      "amenities": [
+        "Pool",
+        "Gym"
+      ],
+      "date_created": "2023-01-01",
+      "time_created": "12:00:00",
+      "id": 3
     }
   ],
   "users": [

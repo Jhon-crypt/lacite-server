@@ -52,3 +52,21 @@ exports.login = (req, res) => {
         }
     });
 };
+
+// Function to retrieve all users
+exports.getUsers = (req, res) => {
+    fs.readFile(dbPath, 'utf8', (err, data) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).json({ error: 'Error reading from database.' });
+        }
+
+        const db = JSON.parse(data);
+        const users = db.users.map(user => {
+            const { password, ...userWithoutPassword } = user;
+            return userWithoutPassword;
+        });
+
+        res.status(200).json(users);
+    });
+};
