@@ -10,4 +10,6 @@ router.get('/properties/counts', propertyController.getPropertyCounts);
 // Route to list all properties
 router.get('/properties/all', propertyController.listProperties);
 
+router.post('/properties/get-by-ids', propertyController.getPropertiesByArray);
+
 module.exports = router; 

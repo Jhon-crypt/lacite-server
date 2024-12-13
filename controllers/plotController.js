@@ -82,3 +82,29 @@ exports.createPlot = (req, res) => {
         });
     });
 };
+
+// Function to fetch properties by array of IDs
+exports.getPropertiesByArray = (req, res) => {
+    const { propertyIds } = req.body; // Expect an array of property IDs in the request body
+
+    // Validate input
+    if (!Array.isArray(propertyIds)) {
+        return res.status(400).json({ error: 'propertyIds must be an array' });
+    }
+
+    fs.readFile(dbPath, 'utf8', (err, data) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).json({ error: 'Error reading from database.' });
+        }
+
+        const db = JSON.parse(data);
+        const matchedProperties = db.plots.filter(plot => propertyIds.includes(plot.id));
+
+        if (matchedProperties.length === 0) {
+            return res.status(404).json({ error: 'No matching properties found' });
+        }
+
+        res.status(200).json(matchedProperties);
+    });
+};

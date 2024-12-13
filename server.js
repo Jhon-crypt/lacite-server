@@ -12,12 +12,15 @@ app.use(express.json()); // Middleware to parse JSON bodies
 const userRoutes = require('./routes/userRoutes');
 const propertyRoutes = require('./routes/propertyRoutes');
 const plotRoutes = require('./routes/plotRoutes');
+const bookingRoutes = require('./routes/bookingRoutes');
 
 // Use routes
 app.use('/api', userRoutes);
 app.use('/api', propertyRoutes);
 app.use('/api', plotRoutes);
+app.use('/api', bookingRoutes);
 app.use('/images', express.static(path.join(__dirname, 'storage', 'plots')));
+app.use('/plot-images', express.static(path.join(__dirname, 'storage', 'properties')));
 
 
 app.get('/', (req, res) => {
