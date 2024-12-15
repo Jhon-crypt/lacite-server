@@ -10,13 +10,16 @@ exports.createBooking = (req, res) => {
         country_of_residence,
         plot_property,
         plot_property_id,
-        type
+        type,
+        price,
+        status = 'pending' // Default status is 'pending' if not provided
     } = req.body;
 
     // Validate required fields
-    if (!fullname || !email || !phone || !country_of_residence || !plot_property || !plot_property_id || !type) {
+    if (!fullname || !email || !phone || !country_of_residence || !plot_property || 
+        !plot_property_id || !type || !price) {
         return res.status(400).json({
-            error: 'Missing required fields. Please provide fullname, email, phone, country_of_residence, plot_property, plot_property_id, and type'
+            error: 'Missing required fields. Please provide fullname, email, phone, country_of_residence, plot_property, plot_property_id, type, and price'
         });
     }
 
@@ -37,6 +40,8 @@ exports.createBooking = (req, res) => {
             plot_property,
             plot_property_id,
             type,
+            price,
+            status,
             date_created: new Date().toISOString().split('T')[0], // Format: YYYY-MM-DD
             time_created: new Date().toTimeString()
         };

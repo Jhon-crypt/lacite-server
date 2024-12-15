@@ -371,50 +371,17 @@
   "bookings": [
     {
       "id": 1,
-      "fullname": "",
-      "email": "",
-      "phone": "",
-      "country_of_residence": "",
-      "plot_property": "",
-      "plot_property_id": "",
-      "type": "",
-      "date_created": "",
-      "time_created": ""
-    },
-    {
-      "id": 2,
-      "fullname": "John Doe",
-      "email": "john@example.com",
-      "phone": "1234567890",
-      "plot_property": "Property",
-      "plot_property_id": "123",
-      "type": "Residential",
-      "date_created": "2024-12-13",
-      "time_created": "15:41:23 GMT+0100 (West Africa Standard Time)"
-    },
-    {
-      "id": 3,
-      "fullname": "Karohunwi Ashimolowo",
-      "email": "johnoladele690@gmail.com",
-      "phone": "09061811990",
-      "country_of_residence": "United States",
-      "plot_property": "Property",
-      "plot_property_id": "123",
-      "type": "Residential",
-      "date_created": "2024-12-13",
-      "time_created": "15:58:40 GMT+0100 (West Africa Standard Time)"
-    },
-    {
-      "id": 4,
       "fullname": "John Oladele",
       "email": "johnoladele690@gmail.com",
       "phone": "09061811990",
       "country_of_residence": "Nigeria",
-      "plot_property": "Property",
-      "plot_property_id": "123",
+      "plot_property": "Plot 2",
+      "plot_property_id": "2",
       "type": "Residential",
-      "date_created": "2024-12-13",
-      "time_created": "16:02:44 GMT+0100 (West Africa Standard Time)"
+      "price": "$316",
+      "status": "pending",
+      "date_created": "2024-12-15",
+      "time_created": "08:36:01 GMT+0100 (West Africa Standard Time)"
     }
   ]
 }
