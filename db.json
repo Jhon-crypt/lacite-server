@@ -382,6 +382,20 @@
       "status": "pending",
       "date_created": "2024-12-15",
       "time_created": "08:36:01 GMT+0100 (West Africa Standard Time)"
+    },
+    {
+      "id": 2,
+      "fullname": "Karohunwi Ashimolowo",
+      "email": "karohunwiashimolowo@gmail.com",
+      "phone": "08079767395",
+      "country_of_residence": "United States",
+      "plot_property": "Plot 2",
+      "plot_property_id": "2",
+      "type": "Residential",
+      "price": "$316",
+      "status": "pending",
+      "date_created": "2024-12-15",
+      "time_created": "09:05:16 GMT+0100 (West Africa Standard Time)"
     }
   ]
 }

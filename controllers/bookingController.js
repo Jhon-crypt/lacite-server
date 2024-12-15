@@ -30,6 +30,14 @@ exports.createBooking = (req, res) => {
         }
 
         const db = JSON.parse(data);
+
+        // Check if email already exists in bookings
+        const existingBooking = db.bookings.find(booking => booking.email === email);
+        if (existingBooking) {
+            return res.status(400).json({
+                error: 'A booking with this email already exists'
+            });
+        }
         
         const newBooking = {
             id: db.bookings.length + 1,
