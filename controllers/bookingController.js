@@ -103,4 +103,106 @@ exports.getBookingById = (req, res) => {
 
         res.status(200).json(booking);
     });
-}; 
+};
+
+// Function to approve booking
+exports.approveBooking = (req, res) => {
+    const { email } = req.body;
+
+    if (!email) {
+        return res.status(400).json({
+            error: 'Email is required'
+        });
+    }
+
+    fs.readFile(dbPath, 'utf8', (err, data) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).json({ error: 'Error reading from database.' });
+        }
+
+        const db = JSON.parse(data);
+        
+        // Find booking by email
+        const bookingIndex = db.bookings.findIndex(booking => booking.email === email);
+        
+        if (bookingIndex === -1) {
+            return res.status(404).json({
+                error: 'No booking found with this email'
+            });
+        }
+
+        // Update the status
+        db.bookings[bookingIndex].status = 'user-approved';
+
+        // Write the updated bookings back to db.json
+        fs.writeFile(dbPath, JSON.stringify(db, null, 2), (err) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).json({ error: 'Error writing to database.' });
+            }
+
+            res.status(200).json({
+                message: 'Booking approved successfully',
+                booking: db.bookings[bookingIndex]
+            });
+        });
+    });
+};
+
+// Function to cancel/reject booking
+exports.cancelBooking = (req, res) => {
+    const { email } = req.body;
+
+    if (!email) {
+        return res.status(400).json({
+            error: 'Email is required'
+        });
+    }
+
+    fs.readFile(dbPath, 'utf8', (err, data) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).json({ error: 'Error reading from database.' });
+        }
+
+        const db = JSON.parse(data);
+        
+        // Find booking by email
+        const bookingIndex = db.bookings.findIndex(booking => booking.email === email);
+        
+        if (bookingIndex === -1) {
+            return res.status(404).json({
+                error: 'No booking found with this email'
+            });
+        }
+
+        // Update the status
+        db.bookings[bookingIndex].status = 'not-approved';
+
+        // Write the updated bookings back to db.json
+        fs.writeFile(dbPath, JSON.stringify(db, null, 2), (err) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).json({ error: 'Error writing to database.' });
+            }
+
+            res.status(200).json({
+                message: 'Booking cancelled successfully',
+                booking: db.bookings[bookingIndex]
+            });
+        });
+    });
+};
+
+// Function to count all bookings
+exports.getBookingCounts = (req, res) => {
+    fs.readFile(dbPath, 'utf8', (err, data) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).json({ error: 'Error reading from database.' });
+        }
+        const db = JSON.parse(data);
+        res.status(200).json({ count: db.bookings.length });
+    });
+};

@@ -365,7 +365,7 @@
       "role": "admin",
       "phone": "09061811990",
       "email": "johnoladele690@gmail.com",
-      "password": "12345678"
+      "password": "1234567"
     }
   ],
   "bookings": [
@@ -379,7 +379,7 @@
       "plot_property_id": "2",
       "type": "Residential",
       "price": "$316",
-      "status": "pending",
+      "status": "not-approved",
       "date_created": "2024-12-15",
       "time_created": "08:36:01 GMT+0100 (West Africa Standard Time)"
     },
